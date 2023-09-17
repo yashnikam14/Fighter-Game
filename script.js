@@ -21,9 +21,6 @@ class Player{
 
     }
 
-    
-        
-        
     heal(Player){
         let hpAmount = Math.ceil(Math.random() * 5);
         Player.health += hpAmount;
@@ -31,7 +28,6 @@ class Player{
 
         console.log(`${Player.name} heals for ${hpAmount} HP`);
     }
-        
         
 }
 
@@ -79,7 +75,6 @@ class Game{
         return this.declareWinner(this.isOver,p1,p2);
     }
 
-    
 }
 
 let player1 = new Player('PLAYER 1',100,20);
